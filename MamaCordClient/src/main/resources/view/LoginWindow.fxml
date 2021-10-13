@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="anchorPane" prefHeight="900.0" prefWidth="1440.0" style="-fx-background-color: #23272A;" stylesheets="@../CSS/MamaCord.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="me.moshe.mamacord.ui.controllers.LoginWindowController">
+   <children>
+      <Label alignment="CENTER" layoutX="520.0" layoutY="65.0" prefHeight="104.0" prefWidth="401.0" text="MamaCord" textFill="#7289da">
+         <font>
+            <Font name="FontAwesome Regular" size="73.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="572.0" layoutY="233.0" prefHeight="32.0" prefWidth="106.0" text="Username" textFill="#7289da">
+         <font>
+            <Font name="FontAwesome Regular" size="21.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="572.0" layoutY="325.0" prefHeight="32.0" prefWidth="106.0" text="Password" textFill="#7289da">
+         <font>
+            <Font name="FontAwesome Regular" size="21.0" />
+         </font>
+      </Label>
+      <TextField fx:id="usernameTextField" layoutX="578.0" layoutY="265.0" prefHeight="53.0" prefWidth="285.0" promptText="username">
+         <font>
+            <Font name="FontAwesome Regular" size="12.0" />
+         </font></TextField>
+      <PasswordField fx:id="passwordField" layoutX="578.0" layoutY="357.0" prefHeight="53.0" prefWidth="285.0" promptText="password">
+         <font>
+            <Font name="FontAwesome Regular" size="12.0" />
+         </font></PasswordField>
+      <Button fx:id="loginButton" layoutX="639.0" layoutY="430.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="163.0" text="Login" />
+      <Button fx:id="registerButton" layoutX="661.0" layoutY="481.0" mnemonicParsing="false" onAction="#switchToRegisterScene" prefHeight="41.0" prefWidth="120.0" text="Register" />
+   </children>
+</AnchorPane>

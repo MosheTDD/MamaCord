@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="anchorPane" prefHeight="900.0" prefWidth="1440.0" style="-fx-background-color: #23272A;" stylesheets="@../CSS/MamaCord.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="me.moshe.mamacord.ui.controllers.RegisterWindowController">
+   <children>
+      <Label alignment="CENTER" layoutX="520.0" layoutY="65.0" prefHeight="104.0" prefWidth="401.0" text="MamaCord" textFill="#7289da">
+         <font>
+            <Font name="FontAwesome Regular" size="73.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="passwordField" layoutX="588.0" layoutY="358.0" onKeyPressed="#checkFields" prefHeight="53.0" prefWidth="285.0" promptText="password" />
+      <TextField fx:id="usernameTextField" layoutX="594.0" layoutY="252.0" onKeyPressed="#checkFields" prefHeight="53.0" prefWidth="285.0" promptText="username" />
+      <Label alignment="CENTER" layoutX="588.0" layoutY="322.0" prefHeight="32.0" prefWidth="106.0" text="Password" textFill="#7289da">
+         <font>
+            <Font name="FontAwesome Regular" size="21.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="588.0" layoutY="220.0" prefHeight="32.0" prefWidth="106.0" text="Username" textFill="#7289da">
+         <font>
+            <Font name="FontAwesome Regular" size="21.0" />
+         </font>
+      </Label>
+      <Button fx:id="registerButton" layoutX="649.0" layoutY="560.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="163.0" text="Register" />
+      <Label alignment="CENTER" layoutX="594.0" layoutY="427.0" prefHeight="32.0" prefWidth="55.0" text="Email" textFill="#7289da">
+         <font>
+            <Font name="FontAwesome Regular" size="21.0" />
+         </font>
+      </Label>
+      <TextField fx:id="emailTextField" layoutX="588.0" layoutY="459.0" onKeyPressed="#checkFields" prefHeight="53.0" prefWidth="285.0" promptText="email" />
+      <Button fx:id="backButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#switchToPreviousScene" prefHeight="41.0" prefWidth="90.0" text="Back" />
+      <Label fx:id="usernameErrorLabel" layoutX="600.0" layoutY="305.0" prefHeight="17.0" prefWidth="261.0" textFill="#eb4f4f">
+         <font>
+            <Font name="FontAwesome Regular" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="passwordErrorLabel" layoutX="600.0" layoutY="411.0" prefHeight="17.0" prefWidth="261.0" textFill="#eb4f4f">
+         <font>
+            <Font name="FontAwesome Regular" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="emailErrorLabel" layoutX="600.0" layoutY="507.0" prefHeight="17.0" prefWidth="261.0" textFill="#eb4f4f">
+         <font>
+            <Font name="FontAwesome Regular" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
