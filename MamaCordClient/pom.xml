@@ -8,11 +8,6 @@
     <artifactId>MamaCordClient</artifactId>
     <version>1.0</version>
 
-    <properties>
-        <java.version>1.8</java.version>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    </properties>
-
     <build>
         <plugins>
             <plugin>
@@ -20,8 +15,8 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.8.1</version>
                 <configuration>
-                    <source>${java.version}</source>
-                    <target>${java.version}</target>
+                    <source>11</source>
+                    <target>11</target>
                 </configuration>
             </plugin>
             <plugin>
@@ -82,17 +77,6 @@
         </resources>
     </build>
 
-    <distributionManagement>
-        <repository>
-            <id>utilities.write</id>
-            <url>https://mymavenrepo.com/repo/sua3AP1ItDvUgpgdiGCW/</url>
-        </repository>
-        <snapshotRepository>
-            <id>utilities.write</id>
-            <url>https://mymavenrepo.com/repo/sua3AP1ItDvUgpgdiGCW/</url>
-        </snapshotRepository>
-    </distributionManagement>
-
     <repositories>
         <repository>
             <id>utilities.read</id>
@@ -102,9 +86,9 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-jar-plugin</artifactId>
-            <version>3.2.0</version>
+            <groupId>me.moshe</groupId>
+            <artifactId>MamaCordCore</artifactId>
+            <version>1.0</version>
         </dependency>
 
         <dependency>

@@ -1,4 +1,4 @@
-package me.moshe.mamacord;
+package me.moshe.mamacord.util;
 
 public enum Scenes {
     LOGIN_WINDOW,

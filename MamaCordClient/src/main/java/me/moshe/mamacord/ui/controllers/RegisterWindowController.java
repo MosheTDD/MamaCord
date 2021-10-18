@@ -7,9 +7,9 @@ import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
-import me.moshe.mamacord.InputCheck;
-import me.moshe.mamacord.Scenes;
-import me.moshe.mamacord.SwitchScenes;
+import me.moshe.mamacord.util.InputCheck;
+import me.moshe.mamacord.util.Scenes;
+import me.moshe.mamacord.util.SwitchScenes;
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -21,6 +21,8 @@ public class RegisterWindowController implements Initializable {
     @FXML public TextField emailTextField, usernameTextField;
     @FXML public PasswordField passwordField;
     @FXML public Label emailErrorLabel, usernameErrorLabel, passwordErrorLabel;
+
+    public static String usernameReg, passReg, emailReg;
 
 
     @Override
@@ -43,11 +45,15 @@ public class RegisterWindowController implements Initializable {
             usernameErrorLabel.setText(InputCheck.checkUsernameReg(username));
         if (passwordField.isFocused())
             passwordErrorLabel.setText(InputCheck.checkPassReg(password));
-        //if (emailTextField.isFocused()) emailErrorLabel.setText(InputCheck.checkEmail(email));
+        if (emailTextField.isFocused())
+            emailErrorLabel.setText(InputCheck.checkEmailReg(email));
     }
 
     @FXML
     public void register(){
-        //TODO Mysql implementation
+        usernameReg = usernameTextField.getText();
+        passReg = passwordField.getText();
+        emailReg = emailTextField.getText();
+        System.out.println(usernameReg + " " + passReg + " " + emailReg);
     }
 }

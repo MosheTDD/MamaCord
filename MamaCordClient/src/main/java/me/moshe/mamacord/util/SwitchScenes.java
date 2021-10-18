@@ -1,4 +1,4 @@
-package me.moshe.mamacord;
+package me.moshe.mamacord.util;
 
 import javafx.application.Platform;
 import javafx.fxml.FXMLLoader;

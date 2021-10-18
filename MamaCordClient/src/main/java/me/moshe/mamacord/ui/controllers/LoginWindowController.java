@@ -6,8 +6,8 @@ import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
-import me.moshe.mamacord.Scenes;
-import me.moshe.mamacord.SwitchScenes;
+import me.moshe.mamacord.util.Scenes;
+import me.moshe.mamacord.util.SwitchScenes;
 
 import java.net.URL;
 import java.util.ResourceBundle;

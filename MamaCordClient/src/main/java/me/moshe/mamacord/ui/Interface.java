@@ -5,11 +5,15 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import me.moshe.mamacord.Main;
 import me.moshe.mamacord.ui.controllers.LoginWindowController;
+import me.moshe.mamacordcore.packet.PacketMaker;
+import me.moshe.mamacordcore.packet.PacketType;
 
 import java.io.IOException;
 
 public class Interface extends Application {
+    private PacketMaker packetMaker = new PacketMaker();
     public static Stage window;
     public static LoginWindowController loginWindowController;
 
@@ -21,6 +25,8 @@ public class Interface extends Application {
     public void start(Stage primaryStage) throws Exception {
         window = primaryStage;
         openLoginWindow();
+        packetMaker.createPacket(PacketType.START_COMMUNICATION);
+        packetMaker.sendPacket(Main.getClient());
     }
 
     private void openLoginWindow() throws IOException{

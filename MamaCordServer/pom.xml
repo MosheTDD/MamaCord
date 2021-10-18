@@ -8,5 +8,12 @@
     <artifactId>MamaCordServer</artifactId>
     <version>1.0</version>
 
+    <dependencies>
+        <dependency>
+            <groupId>me.moshe</groupId>
+            <artifactId>MamaCordCore</artifactId>
+            <version>1.0</version>
+        </dependency>
+    </dependencies>
 
 </project>
